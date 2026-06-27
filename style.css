@@ -1,10 +1,35 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    color: white;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #532399, #2424b8);
+}
+
+.header_content {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1150px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header_links{
+    display: flex;
+    gap: 40px;
+}
+
 body {
     margin: 0;
     padding: 0;
-}
-
-a {
-    text-decoration: none;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .wrapper {
