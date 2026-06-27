@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.intro {
+    height: 700px;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.intro::before {
+    content: "";
+    display: block;
+    background-image: url("intro_background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.intro::after {
+    content: "";
+    display: block;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.about {
+    margin: 100px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.about h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.about p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.play_btn {
+    margin-top: 15px;
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: rgb(0, 217, 7);
+    transition-duration: background-color;
+    transition-duration: 0.4s;
+}
+
+.play_btn:hover {
+    background-color: rgb(0, 242, 8);
+}
+
+.play_btn:active {
+    background-color: rgb(0, 201, 7);
+}
