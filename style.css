@@ -1,3 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -24,12 +34,6 @@ header h1 {
 .header_links{
     display: flex;
     gap: 40px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .wrapper {
@@ -121,18 +125,18 @@ body {
     flex-direction: column;
     color: white;
     background: linear-gradient(45deg, #02050e, #0a0955);
+    padding: 80px 0;
 }
 
 .creators h1 {
-    margin-top: 80px;
     margin-bottom: 20px;
 }
 
 .creators_cards {
-    margin-bottom: 80px;
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 9.5%;
+    width: 740px;
 }
 
 .creator_card {
