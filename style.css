@@ -6,7 +6,7 @@ a {
 header {
     color: white;
     padding: 15px 30px;
-    background: linear-gradient(45deg, #532399, #2424b8);
+    background: linear-gradient(45deg, #0d0e46, #5e33d4, #0a0955);
 }
 
 .header_content {
@@ -94,21 +94,76 @@ body {
 }
 
 .play_btn {
-    margin-top: 15px;
+    margin-top: 50px;
     display: block;
-    padding: 10px 25px;
+    padding: 10px 40px;
     color: white;
-    font-size: 24px;
+    font-size: 40px;
     border-radius: 10px;
-    background-color: rgb(0, 217, 7);
+    background-color: rgb(0, 58, 217);
     transition-duration: background-color;
     transition-duration: 0.4s;
 }
 
+/*rgb(0, 217, 7) rgb(0, 242, 8) rgb(0, 201, 7)*/
+
 .play_btn:hover {
-    background-color: rgb(0, 242, 8);
+    background-color: rgb(24, 86, 255);
 }
 
 .play_btn:active {
-    background-color: rgb(0, 201, 7);
+    background-color: rgb(0, 48, 182);
+}
+
+.creators {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(45deg, #02050e, #0a0955);
+}
+
+.creators h1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.creators_cards {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.creator_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+    gap: 15px;
+}
+
+.creator_card h3 {
+    margin: 0;
+    text-shadow: 0px 0px 15px rgba(248, 248, 255, 0.548);
+}
+
+.creator_card p {
+    margin: 0;
+    text-shadow: 0px 0px 15px rgba(248, 248, 255, 0.548);
+}
+
+.creator_card img {
+    display: block;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 60px 20px rgba(248, 248, 255, 0.178);
+    transition-property: transform;
+    transition-duration: 0.4s;
+}
+
+.creator_card img:hover {
+    transform: scale(1.04);
+    cursor: pointer;
 }
